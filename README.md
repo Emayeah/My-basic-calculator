@@ -1,0 +1,3 @@
+# Hello over there!
+it hasn't got nothing special this calculator, it's written in c++, the numbers are doubles and a char for the operation symbol...
+Bye and see you to the next project!
