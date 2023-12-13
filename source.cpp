@@ -6,7 +6,7 @@ int main() {
 	char sign;
 	double result;
 	char lol;
-	cout << "By Ema yeah, dd/mm/aaaa 11/02/2022\n";
+	cout << "By Ema yeah, dd/mm/aaaa 13/12/2023\n";
 	cout << "********************************************\n";
 	cout << "\t\tCALCULATOR\n";
 	cout << "********************************************\n";
