@@ -22,7 +22,7 @@ int normalsolve() {
 	cin >> num1;
 	cout << "Num 2: ";
 	cin >> num2;
-	cout << "Sign (add, subtract, multiply, divide: +, -, *, /): ";
+	cout << "Sign (add, subtract, multiply, divide, module: +, -, *, /): ";
 	cin >> sign;
 	while (sign) {
 		if (sign == '+') {
@@ -48,19 +48,32 @@ int normalsolve() {
 	
 	}
 }
-int sqrtquestion() {
-	char yn;
+int modulosolve() {
+	int num1;
+	int num2;
+	cout << "Num 1: ";
+	cin >> num1;
+	cout << "Num 2: ";
+	cin >> num2;
+	cout << num1 % num2 << "\n";
+	main2();
+}
+int question() {
+	char ask;
 	char test;
-	cin >> yn;
+	cin >> ask;
 	while (yn)
-	if (yn == 'y') {
-		sqrtsolve();
-	}
-	else if (yn == 'n') {
+	if (ask == 'n') {
 		normalsolve();
 	}
+	else if (ask == 's') {
+		sqrtsolve();
+	}
+	else if (ask == 'm') {
+		modulosolve();
+	}
 	else {
-		cout << "Answer is invalid, choose y or n (y = yes, n = no) *must NOT be capital*";
+		cout << "Answer is invalid, choose n, s or m (n = normal, s = square root, m = modulo) *must NOT be capital*";
 		main2();
 	}
 }
@@ -69,8 +82,8 @@ int main2() {
 	cout << "*******************************************\n";
 	cout << "\t\tCALCULATOR\n";
 	cout << "*******************************************\n";
-	cout << "Do you want to do a square root? (y/n): ";
-	sqrtquestion();
+	cout << "What do you want to do? (n = normal, s = square root, m = modulo): ";
+	question();
 }
 int main() {
 	cout << "By Ema yeah, dd/mm/yyyy 13/12/2023\n";
