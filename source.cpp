@@ -22,7 +22,7 @@ int normalsolve() {
 	cin >> num1;
 	cout << "Num 2: ";
 	cin >> num2;
-	cout << "Sign (add, subtract, multiply, divide, module: +, -, *, /): ";
+	cout << "Sign (add, subtract, multiply, divide: +, -, *, /): ";
 	cin >> sign;
 	while (sign) {
 		if (sign == '+') {
