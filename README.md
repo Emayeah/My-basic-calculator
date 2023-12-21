@@ -3,3 +3,4 @@ this calculator isn't anything special, it's written in C++, the numbers are dou
 Bye and see you to the next project!
 
 Planning to add some area calculators, this shouldnt take long...
+nvm it is taking long, but i have implemented 8 shapes :D
